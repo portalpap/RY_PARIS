@@ -1,0 +1,229 @@
+body{
+    background-image:url(/main/images/repeatMarble.jpg);
+    background-color: black;
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.maincontain{
+    margin: 0 2em 2em 2em;
+    background-color: rgba(70, 216, 253, 0.9);
+    border-radius: 1em;
+    box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.33) inset;
+}
+.toper{
+    margin: 2em 2em 0 2em;
+    background-color: rgba(70, 216, 253, 0.98);
+    border-radius: 1em 1em 0 0;
+    box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.2) inset;
+    color: transparent;
+}
+.header{
+    margin: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    background-color: rgba(70, 216, 253, 0.98);
+    width: 100%-0;
+    box-shadow: 20px 0 5px -20px rgba(0,0,0,0.33) inset, -20px 0 5px -20px rgba(0,0,0,0.33) inset;
+    padding: 0 1.8em;
+}
+
+.top1{
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 70%;
+}
+.white-box{
+    color: black;
+    background-color: rgb(241, 241, 241);
+    width: fit-content;
+    padding: 2px 25px;
+    margin: 50px;
+    font-size: 3.5em;
+    border-radius: 2px;
+    text-align: center;
+}
+ul:not(.vert) li{
+    display: inline-flex;
+    padding: 0 4px 0 4px;
+}
+a:hover{
+    background-color: rgb(241, 241, 241);
+    transition: ease-in .2s;
+    box-shadow: inset 0px -1px 63px -29px rgba(0, 238, 255, 0.9);
+    border-radius: 4px;
+    transform: translateY(2px);
+}   
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+[class^="imgs"]{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+[class^="imgs"] div{
+    background-color: royalblue;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: .5em;
+    border-radius: 6px;
+    align-items: flex-end;
+    justify-content: center;
+}
+[class^="imgs"] div label{
+    width: 100%;
+    background-color: rgb(222, 222, 222);
+    text-align: center;
+    font-size: large;
+    border-radius: 0 0 5px 5px;
+
+}
+[class^="imgs"] div:hover{
+    box-shadow: 0px 30px 50px -19px rgba(0,0,0,0.7);
+    transform: translateY(-.5em);
+    transition: ease-out .3s;
+    cursor:grab;
+}
+.imgs div{
+    width: 500px;
+    height: 375px;
+}
+.imgs-s div{
+    width: 375px;
+    height: 281px;
+}
+[class*="btm"]{
+    padding: 2em;
+}
+.btm-all :nth-child(odd)[class*="btm"]{
+    background-color: rgb(241, 241, 241);
+}
+.btm-all :nth-child(even)[class*="btm"]{
+    background-color: rgb(201, 201, 201);
+}
+.btm-all [class*="btm"]:first-child{
+border-radius: 4em 4em 0 0;
+}
+.btm-all [class*="btm"]:nth-child(3){
+    border-radius: 0 0 4em 4em;
+    }
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.recipe{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(241, 241, 241, .9);
+    border-radius: 1em 1em 2.5em 2.5em;
+}
+.recipe div{
+    flex-direction: column;
+    width: 50%;
+    padding: 1em 1.33em;
+    align-content: space-between;
+}
+.title{
+    font-size: 2.2em;
+    text-align: center;
+}
+.rgt li{
+    margin-top: 1em;
+}
+iframe{
+    width: 100%;
+    aspect-ratio: 112/63;
+    flex-grow: 100;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom-left-radius: 1.8em;
+}
+iframe:hover{
+    box-shadow: 0px 10px 20px -20px rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.66);
+    transition: ease-in .2s;
+}
+.description{
+    padding: 1px 24%;
+    margin-bottom: 8px;
+    background-color: rgba(221, 221, 221, .9);
+    border-radius: 1em;
+    font-size: larger;
+    text-align: center;
+}
+thead{
+    font-size: 2em;
+}
+th{
+    font-weight: 900;
+}
+td{
+    padding-right: 8em;
+}
+table{
+    display: flex;
+    flex-direction: column;
+}
+.grey-box{
+    background-color: rgba(221, 221, 221, .9);
+    display: flex;
+    padding: 1em 3em;
+}
+.review{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-bottom: 1em;
+}
+button{
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 2em;
+}
+.btn1{
+padding: 4px 1.5em;
+background-color: rgb(0, 69, 169);
+color: white;
+font-size: larger;
+}
+.btn2{
+background-image: url(/main/images/printerIcon.png);
+background-size: cover;
+border-width: .1px;
+width: 50px;
+}
+.buttons{
+    display: flex;
+}
+.review span{
+    color: rgb(0, 69, 169);
+}
+.review h4{
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+.review h1{
+    margin: 5px;
+    font-size: 2.5em;
+}
+button:hover{
+    box-shadow: 0px 2px 35px -20px rgba(0,0,0,0.7) inset,
+    0px 10px 50px -20px rgba(0,0,0,0.7);
+    transform: translateY(-.2em);
+    transition: ease-out .3s;
+}
